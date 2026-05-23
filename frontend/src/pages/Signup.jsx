@@ -60,8 +60,6 @@ const LoadingSpinner = () => (
 );
 
 const Signup = () => {
-
-
   // Auth State
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

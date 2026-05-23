@@ -76,8 +76,6 @@ const LoadingSpinner = () => (
 );
 
 const Login = () => {
-
-
   // Auth State
   const [email, setEmail] = useState("");
 
