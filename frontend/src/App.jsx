@@ -14,6 +14,7 @@ import Footer from "./components/Footer.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import About from "./pages/About.jsx";
 import Profile from './pages/Profile.jsx';
+import ForgotPassword from './pages/ForgotPassword.jsx';
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
 const AuthLayout = ({ children }) => (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/"       element={<PublicRoute><AuthLayout><Login /></AuthLayout></PublicRoute>} />
           <Route path="/login"  element={<PublicRoute><AuthLayout><Login /></AuthLayout></PublicRoute>} />
           <Route path="/signup" element={<PublicRoute><AuthLayout><Signup /></AuthLayout></PublicRoute>} />
+          <Route path="/forgot-password" element={<PublicRoute><AuthLayout><ForgotPassword /></AuthLayout></PublicRoute>} />
           <Route path="/about"  element={<AuthLayout><About /></AuthLayout>} />
           <Route
             path="/dashboard"
